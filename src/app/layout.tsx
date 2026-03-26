@@ -14,7 +14,7 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: 'Digital Heroes | Play with Purpose',
+  title: 'Golf Charity | Play with Purpose',
   description: 'A modern golf performance platform combining stableford tracking with community-driven charity draws.',
 };
 
