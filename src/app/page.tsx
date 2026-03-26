@@ -7,13 +7,13 @@ export default function Home() {
   return (
     <div className="relative min-h-screen bg-[#0a0a0c] text-white selection:bg-emerald-500/30 overflow-hidden font-outfit">
       
-      {/* Dynamic Background */}
+     
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-emerald-600/10 blur-[120px] rounded-full animate-pulse-slow"></div>
         <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-blue-600/10 blur-[120px] rounded-full animate-pulse-slow" style={{ animationDelay: '4s' }}></div>
       </div>
 
-      {/* Premium Navbar */}
+     
       <nav className="fixed top-0 w-full z-50 border-b border-white/5 bg-black/30 backdrop-blur-xl">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-4 group cursor-pointer">
@@ -37,7 +37,7 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Massive Emotive Hero Section */}
+      
       <main className="relative z-10 pt-28 pb-20 px-6 max-w-7xl mx-auto">
         <div className="flex flex-col items-center text-center mt-4 md:mt-8">
           
@@ -83,19 +83,18 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Highly Interactive Golf & Charity Cards Container */}
+       
         <div id="features" className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-40 relative px-4 md:px-0">
-          
-          {/* Active Hover Card 1: GOLF - The Flag & Cup */}
+       
           <div className="glass-panel p-10 rounded-3xl flex flex-col gap-8 group hover:-translate-y-4 transition-all duration-500 ease-out hover:shadow-[0_40px_80px_rgba(16,185,129,0.2)] hover:border-emerald-500/40 hover:bg-emerald-900/10 overflow-hidden relative animate-float cursor-default">
-            {/* The interactive physics stage */}
+          
             <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-3xl group-hover:bg-emerald-500/30 transition-all duration-700"></div>
             <div className="relative w-full h-24 bg-black/40 rounded-2xl border border-white/5 overflow-hidden flex items-end padding-4">
-               {/* Golf Hole */}
+              
                <div className="absolute bottom-2 right-4 w-12 h-4 bg-black rounded-[100%] border border-white/10 shadow-inner">
                   <div className="absolute bottom-0 right-4 text-3xl group-hover:animate-flag-wave drop-shadow-[0_0_10px_rgba(16,185,129,0.5)] z-10">⛳</div>
                </div>
-               {/* Golf Ball rolling in on hover */}
+              
                <div className="absolute bottom-2 left-6 text-xl opacity-0 group-hover:opacity-100 group-hover:animate-roll-in drop-shadow-[0_5px_10px_rgba(255,255,255,0.4)] z-0">⚪</div>
             </div>
             <div className="relative z-10">
@@ -106,9 +105,9 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Active Hover Card 2: CHARITY - The Beating Heart */}
+        
           <div className="glass-panel p-10 rounded-3xl flex flex-col gap-8 group hover:-translate-y-4 transition-all duration-500 ease-out hover:shadow-[0_40px_80px_rgba(59,130,246,0.2)] hover:border-blue-500/40 hover:bg-blue-900/10 overflow-hidden relative animate-float-delayed cursor-default">
-            {/* The interactive physics stage */}
+          
             <div className="absolute -top-10 -right-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-500/30 transition-all duration-700"></div>
             <div className="relative w-full h-24 bg-gradient-to-t from-blue-500/10 to-transparent rounded-2xl border border-white/5 flex items-center justify-center">
                <div className="text-6xl drop-shadow-[0_0_20px_rgba(59,130,246,0.6)] group-hover:animate-pulse-heart text-blue-400 transition-all duration-300 group-hover:scale-110">💚</div>
@@ -119,14 +118,14 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Active Hover Card 3: GOLF/WINNINGS - The Club Swing */}
+        
           <div className="glass-panel p-10 rounded-3xl flex flex-col gap-8 group hover:-translate-y-4 transition-all duration-500 ease-out hover:shadow-[0_40px_80px_rgba(244,63,94,0.2)] hover:border-rose-500/40 hover:bg-rose-900/10 overflow-hidden relative animate-float cursor-default">
-            {/* The interactive physics stage */}
+        
             <div className="absolute -top-10 -right-10 w-40 h-40 bg-rose-500/10 rounded-full blur-3xl group-hover:bg-rose-500/30 transition-all duration-700"></div>
             <div className="relative w-full h-24 bg-black/40 rounded-2xl border border-white/5 overflow-hidden flex items-end justify-center pb-2">
-               {/* Golfer Swinging */}
+             
                <div className="text-5xl group-hover:animate-swing origin-bottom drop-shadow-[0_0_20px_rgba(244,63,94,0.4)] relative z-10 transition-transform duration-300">🏌️‍♂️</div>
-               {/* Prize Pool Starburst */}
+             
                <div className="absolute top-4 right-8 text-2xl opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-150 transition-all duration-700 delay-300 drop-shadow-[0_0_15px_rgba(251,191,36,0.8)]">💰</div>
             </div>
             <div className="relative z-10">
@@ -137,10 +136,10 @@ export default function Home() {
 
         </div>
 
-        {/* Interactive Data Ribbon */}
+      
         <div id="impact" className="col-span-1 md:col-span-3 mt-32 p-1.5 rounded-[2.5rem] bg-gradient-to-r from-emerald-500/20 via-blue-500/20 to-rose-500/20 animate-fade-in-up transition-transform duration-700 hover:scale-[1.01] overflow-hidden group">
           <div className="bg-[#0a0a0c]/90 backdrop-blur-3xl rounded-[2.3rem] p-10 md:p-14 border border-white/5 flex flex-col md:flex-row items-center justify-between gap-12 relative overflow-hidden">
-            {/* Glossy inner highlights */}
+           
             <div className="absolute top-0 right-1/4 w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:opacity-100 transition-opacity"></div>
             
             <div className="flex-1 space-y-5 relative z-10 text-center md:text-left">
@@ -166,9 +165,9 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Grand Enterprise Footer */}
+   
       <footer className="border-t border-emerald-500/10 bg-[#060608] pt-24 pb-10 px-6 mt-32 relative z-10 overflow-hidden group">
-        {/* Footer Glow */}
+      
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-px bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent shadow-[0_0_20px_rgba(16,185,129,0.5)] group-hover:scale-110 transition-transform duration-1000"></div>
         
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-6 mb-20">

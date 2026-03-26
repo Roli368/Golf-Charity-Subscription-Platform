@@ -25,7 +25,7 @@ export function CountUp({
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
       
-      // easeOutExpo for a fast start and long elegant tail
+      
       const easeProgress = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
       
       setCount(easeProgress * end);

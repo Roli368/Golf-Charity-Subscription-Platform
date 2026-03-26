@@ -70,7 +70,7 @@ export default function SignupPage() {
 
       {/* Main Registration Panel */}
       <div className="relative z-10 w-full max-w-md animate-fade-in-up mt-10 sm:mt-0">
-        {/* Decorative inner glow */}
+       
         <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 w-32 h-32 bg-rose-500/10 rounded-full blur-2xl pointer-events-none"></div>
         

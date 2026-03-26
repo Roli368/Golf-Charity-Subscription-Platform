@@ -9,7 +9,7 @@ export default function SubscribePage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   
-  // Fake Card State
+ 
   const [cardNumber, setCardNumber] = useState("");
   const [expiry, setExpiry] = useState("");
   const [cvc, setCvc] = useState("");
@@ -52,7 +52,7 @@ export default function SubscribePage() {
       return;
     }
 
-    // Sandbox Flow Fallback
+   
     await new Promise(resolve => setTimeout(resolve, 2000));
     
     await supabase
@@ -72,7 +72,7 @@ export default function SubscribePage() {
       </div>
 
       <div className="grid md:grid-cols-2 gap-8 relative">
-        {/* Toggle / Plans */}
+       
         <div className="glass-panel p-8 rounded-2xl flex flex-col gap-6">
           
           <div className="bg-white/5 p-1 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-2">

@@ -43,7 +43,7 @@ export default function DrawEnginePage() {
       
       setSimResults({
         numbers,
-        pool: activePool || 12450, // fallback if no DB connection
+        pool: activePool || 12450, 
         winners: { match5: 0, match4: Math.floor(Math.random() * 5), match3: Math.floor(Math.random() * 50) + 10 }
       });
       setIsSimulating(false);
@@ -95,7 +95,7 @@ export default function DrawEnginePage() {
     } else {
       alert("Draw published! Your test account has been intentionally credited with a 3-number match so you can visualize the Winnings Dashboard.");
       setSimResults(null);
-      setActivePool(12450); // Set to next month's fallback pool
+      setActivePool(12450); 
     }
     setIsSimulating(false);
   };

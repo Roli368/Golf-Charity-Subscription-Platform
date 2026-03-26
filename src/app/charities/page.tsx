@@ -54,13 +54,12 @@ export default function CharitiesPublicPage() {
         </div>
       </nav>
 
-      {/* Atmospheric Mesh */}
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--color-surface),_transparent_60%)] opacity-40 pointer-events-none"></div>
       <div className="absolute top-[20%] left-[-10%] w-[50%] h-[50%] bg-blue-600/10 blur-[130px] rounded-full animate-pulse-slow pointer-events-none"></div>
       
       <main className="max-w-7xl mx-auto flex flex-col gap-14 px-6 pt-28 pb-32 relative z-10">
         
-        {/* Massive Header Engine */}
+      
         <div className="flex flex-col gap-6 animate-fade-in-up items-center text-center">
           <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-sm text-blue-400 font-bold tracking-wide mb-2 group">
              <span className="text-xl group-hover:animate-pulse-heart origin-center drop-shadow-[0_0_10px_rgba(59,130,246,0.8)]">💚</span>
@@ -75,7 +74,7 @@ export default function CharitiesPublicPage() {
           </p>
         </div>
 
-        {/* Floating Search Console */}
+       
         <div className="glass-panel p-6 rounded-[2rem] animate-fade-in-up shadow-[0_20px_40px_rgba(0,0,0,0.5)] border border-white/10 w-full max-w-3xl mx-auto relative z-10" style={{ animationDelay: '100ms' }}>
           <div className="relative w-full group">
             <Search className="absolute left-6 top-1/2 -translate-y-1/2 text-zinc-500 group-focus-within:text-emerald-400 transition-colors" size={24} />

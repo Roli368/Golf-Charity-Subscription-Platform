@@ -9,7 +9,7 @@ type CharityRow = {
   name: string;
   description: string;
   image_url: string | null;
-  allocation?: string; // computed value if needed
+  allocation?: string; 
 };
 
 export default function CharityManagementAdmin() {
@@ -17,7 +17,6 @@ export default function CharityManagementAdmin() {
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   
-  // Content Management State
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
   const [currentId, setCurrentId] = useState("");

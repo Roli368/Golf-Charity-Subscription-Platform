@@ -1,28 +1,92 @@
-# FairwayFund
+# 🏌️ FairwayFund  
+**High-Density Golf × Charity SaaS Platform**
 
-FairwayFund is a high-density, ultra-premium SaaS platform that bridges competitive amateur golf with automated philanthropic impact. By logging your latest 5 Stableford scores, you generate a unique cryptographic vector that serves as your entry into the monthly, algorithm-driven draw pool.
+FairwayFund is an ultra-premium SaaS platform that combines **competitive amateur golf**, **algorithm-driven rewards**, and **automated philanthropy** into a single ecosystem.
 
-## Features
+By submitting your latest **5 Stableford scores**, users enter a **monthly intelligent draw system**, while part of their subscription supports a chosen charity.
 
-- **Extreme Volumetric Glassmorphism**: Built on Tailwind CSS v4, the entire application utilizes deeply integrated physics—inputs glow on focus, buttons utilize complex CSS box-shadow panning, and hover states physically lift containers off the background.
-- **Algorithmic Mathematics Engine**: Every financial metric on the dashboard evaluates mathematically on runtime using custom `<CountUp />` physics components, preventing static text renders and maximizing SaaS liveness.
-- **Continuous Cursor Tracking**: A global interactive environment watches cursor velocity, emitting dynamic emerald and blue volumetric sweeps beneath the primary DOM structures.
-- **Automated Philanthropy**: Intelligent distribution logic allocates a distinct percentage of a user's subscription automatically to the selected verified charity upon subscription processing.
+---
 
-## Tech Stack
+## ✨ Core Concept
 
-- **Frontend Architecture**: Next.js 15 (App Router), React 19, TypeScript
-- **Styling Matrix**: Tailwind CSS v4, Lucide React (Vector System)
-- **Database & Authentication**: Supabase (PostgreSQL, Row Level Security)
-- **Financial Processing**: Stripe (Webhooks, Checkout Sessions)
+- 🎯 Play → Submit Scores  
+- 🎲 Enter → Monthly Draw  
+- 💸 Win → Rewards  
+- ❤️ Give → Charity  
 
-## Local Development Checklist
+---
 
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Copy `.env.example` over to `.env.local` and configure your Supabase local or remote keys.
-4. Execute the SQL schema definition located within `supabase/migrations/` inside your database dashboard.
-5. Initialize the development server: `npm run dev`
-6. Access the engine at `http://localhost:3000`.
+## 🚀 Features
 
-*Looking for production deployment instructions? Refer to the `DEPLOYMENT.md` guide.*
+### 🌌 Advanced UI/UX
+- Volumetric Glassmorphism design
+- Physics-based hover & glow effects
+- Cursor tracking gradients
+- Premium SaaS feel
+
+---
+
+### 🧠 Draw Engine
+- Monthly draw system
+- Score-based participation
+- Reward tiers:
+  - 5-match (Jackpot)
+  - 4-match
+  - 3-match
+
+---
+
+### ⛳ Score Management
+- Store latest 5 scores
+- Auto-replace oldest score
+- Reverse chronological order
+- Range: 1–45 (Stableford)
+
+---
+
+### 💳 Subscription & Payments
+- Monthly & yearly plans
+- Stripe Checkout integration
+- Secure payment flow
+
+---
+
+###  Charity System
+- Select charity at signup
+- Minimum 10% contribution
+- Adjustable donation %
+
+---
+
+###  Dashboard
+- Subscription status
+- Score tracking
+- Charity selection
+- Draw participation
+- Winnings overview
+
+---
+
+### 🛠 Admin Panel
+- User management
+- Draw control
+- Charity management
+- Winner verification
+- Analytics
+
+---
+
+##  Tech Stack
+
+- **Frontend**: Next.js 15, React 19, TypeScript  
+- **Styling**: Tailwind CSS v4, Lucide Icons  
+- **Backend**: Supabase (PostgreSQL + Auth + RLS)  
+- **Payments**: Stripe  
+
+---
+
+![alt text](images/image.png)
+![alt text](images/image-2.png)
+![alt text](images/image-1.png)
+![alt text](images/image-3.png)
+![alt text](images/image-4.png)
