@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2563eb;
+  --color-accent: #10b981;
+  --color-accent-hover: #059669;
+
+  --color-background: #0f1115;
+  --color-surface: rgba(255, 255, 255, 0.03);
+  --color-surface-hover: rgba(255, 255, 255, 0.06);
+  --color-border-subtle: rgba(255, 255, 255, 0.1);
+  --color-foreground: #fafafa;
+  --color-foreground-muted: #a1a1aa;
+
+  --font-sans: var(--font-outfit), var(--font-geist-sans), sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+
+  /* Glassmorphism utilities */
+  --backdrop-blur-md: 12px;
+  --backdrop-blur-lg: 24px;
+}
+
+@layer base {
+  :root {
+    --background: #0f1115;
+    --foreground: #fafafa;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    background: var(--color-surface);
+    backdrop-filter: blur(var(--backdrop-blur-md));
+    -webkit-backdrop-filter: blur(var(--backdrop-blur-md));
+    border: 1px solid var(--color-border-subtle);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .glass-panel:hover {
+    background: var(--color-surface-hover);
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+
+  .accent-glow {
+    filter: drop-shadow(0 0 15px rgba(16, 185, 129, 0.4));
+  }
+  
+  .primary-glow {
+    filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.4));
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.05); }
+  }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  .animate-float-delayed {
+    animation: float 6s ease-in-out 3s infinite;
+  }
+  .animate-pulse-slow {
+    animation: pulse-slow 8s ease-in-out infinite;
+  }
+  @keyframes fade-in-up {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+  }
+  
+  /* Golf & Charity Micro-Interactions */
+  @keyframes roll-in {
+    0% { transform: translateX(0px) translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateX(40px) translateY(10px) rotate(360deg) scale(0.5); opacity: 0; }
+  }
+  .animate-roll-in {
+    animation: roll-in 1s ease-in forwards;
+  }
+  
+  @keyframes pulse-heart {
+    0%, 100% { transform: scale(1); }
+    15% { transform: scale(1.2); }
+    30% { transform: scale(1); }
+    45% { transform: scale(1.2); }
+    60% { transform: scale(1); }
+  }
+  .animate-pulse-heart {
+    animation: pulse-heart 1.5s infinite ease-in-out;
+  }
+  
+  @keyframes flag-wave {
+    0%, 100% { transform: rotate(0deg); transform-origin: bottom right; }
+    50% { transform: rotate(15deg); transform-origin: bottom right; }
+  }
+  .animate-flag-wave {
+    animation: flag-wave 2s infinite ease-in-out;
+  }
+
+  @keyframes grid-pan {
+    0% { background-position: 0 0; }
+    100% { background-position: 50px 50px; }
+  }
+  .animate-grid-pan {
+    animation: grid-pan 5s linear infinite;
+  }
+
+  @keyframes club-swing {
+    0% { transform: rotate(0deg); transform-origin: bottom center; }
+    20% { transform: rotate(-30deg); transform-origin: bottom center; }
+    60% { transform: rotate(80deg); transform-origin: bottom center; }
+    100% { transform: rotate(0deg); transform-origin: bottom center; }
+  }
+  .group:hover .group-hover\:animate-swing {
+    animation: club-swing 1s ease-in-out forwards;
+  }
+  
+  .group:hover .group-hover\:animate-roll-in {
+    animation: roll-in 1s ease-in forwards;
+  }
+
+  .group:hover .group-hover\:animate-pulse-heart {
+    animation: pulse-heart 1.5s infinite ease-in-out;
+  }
+  
+  .group:hover .group-hover\:animate-flag-wave {
+    animation: flag-wave 2s infinite ease-in-out;
+  }
+}
